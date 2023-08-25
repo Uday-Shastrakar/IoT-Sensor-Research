@@ -10,6 +10,7 @@ data class SensorData (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
-    val sensorId: String,
-    val temperature: Double
+    val sensorId: Long?,
+    val temperature: Long?,
+    val randomTemperature:Double?
 )
